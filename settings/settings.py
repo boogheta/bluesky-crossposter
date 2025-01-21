@@ -12,7 +12,7 @@ visibility = "public"
 # for crossposting with no change, "skip" for skipping posts with mentions, "strip" for removing
 # the starting @ of a username and "url" to replace the username with a link to their bluesky profile.
 # Accepted values: ignore, skip, strip, url
-mentions = "ignore"
+mentions = "skip"
 # post_default sets default posting mode. True means all posts will be crossposted unless otherwise specified,
 # False means no posts will be crossposted unless explicitly specified. If no toggle (below) is specified
 # post_default will be treated as True no matter what is set.
