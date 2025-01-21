@@ -2,17 +2,17 @@ import os
 
 # Enables/disables crossposting to twitter and mastodon
 # Accepted values: True, False
-Twitter = True
+Twitter = False
 Mastodon = True
 # visibility sets what visibility should be used when posting to Mastodon. Options are "public" for always public, "unlisted" for always unlisted,
 # "private" for always private and "hybrid" for all posts public except responses in threads (meaning first post in a thread is public and the rest unlisted).
 # Accepted values: public, private, hybrid
-visibility = "hybrid"
+visibility = "public"
 # mentions set what is to be done with posts containing a mention of another user. Options are "ignore",
 # for crossposting with no change, "skip" for skipping posts with mentions, "strip" for removing
 # the starting @ of a username and "url" to replace the username with a link to their bluesky profile.
 # Accepted values: ignore, skip, strip, url
-mentions = "strip"
+mentions = "ignore"
 # post_default sets default posting mode. True means all posts will be crossposted unless otherwise specified,
 # False means no posts will be crossposted unless explicitly specified. If no toggle (below) is specified
 # post_default will be treated as True no matter what is set.
@@ -37,7 +37,7 @@ max_retries = 5
 # post_time_limit sets max time limit (in hours) for fetching posts. If no database exists, all posts within this time
 # period will be posted.
 # Accepted values: Integers greater than 0
-post_time_limit = 12
+post_time_limit = 2
 # max_per_hour limits the amount of posts that can be crossposted withing an hour. 0 means no limit.
 # Accepted values: Any integer
 max_per_hour = 0
@@ -50,9 +50,9 @@ overflow_posts = "retry"
 cross_delete = True
 # Setting a buffer to avoid exceeding the rate limit. The limit is set in percent, and when the ratelimit-remaining reaches
 # x percent of ratelimit-limit the crossposter will pause until the ratelimit-reset.
-rate_limit_buffer = 10
+rate_limit_buffer = 50
 # Sets minimum log level i Loguru logger
-log_level = "INFO"
+log_level = "DEBUG"
 
 
 # Override settings with environment variables if they exist

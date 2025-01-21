@@ -2,16 +2,16 @@ import os
 
 # All necessary tokens, passwords, etc.
 # Your bluesky handle should include your instance, so for example handle.bsky.social if you are on the main one.
-BSKY_HANDLE = ""
+BSKY_HANDLE = "boogheta.bsky.social"
 # Generate an app password in the settings on bluesky. DO NOT use your main password.
 BSKY_PASSWORD = ""
 # Your bluesky PDS if you are not using the main instance.
 # Setting this value to None means that the _BASE_API_URL_ ('https://bsky.social') will be used.
 BSKY_PDS = None
 # Your mastodon handle. Not needed for authentication, but used for making "quote posts".
-MASTODON_HANDLE = ""
+MASTODON_HANDLE = "boogheta"
 # The mastodon instance your account is on.
-MASTODON_INSTANCE = ""
+MASTODON_INSTANCE = "piaille.fr"
 # Generate your token in the development settings on your mastodon account. Token must have the permissions to
 # post statuses (write:statuses)
 MASTODON_TOKEN = ""
