@@ -19,8 +19,8 @@ mentions = "strip"
 # Accepted values: True, False
 post_default = True
 # The function to select what posts are crossposted (mis)uses the language function in Bluesky.
-# Enter a language here and all posts will be filtered based on if that language is included 
-# in the post. 
+# Enter a language here and all posts will be filtered based on if that language is included
+# in the post.
 # E.g. if you set post_default to True and add German ("de") as post toggle, all posts including
 # German as a language will be skipped. If post_default is set to False, only posts including
 # german will be crossposted. You can use different languages as selectors for Mastodon
@@ -34,7 +34,7 @@ quote_posts = True
 # max_retries sets maximum amount of times poster will retry a failed crosspost.
 # Accepted values: Integers greater than 0
 max_retries = 5
-# post_time_limit sets max time limit (in hours) for fetching posts. If no database exists, all posts within this time 
+# post_time_limit sets max time limit (in hours) for fetching posts. If no database exists, all posts within this time
 # period will be posted.
 # Accepted values: Integers greater than 0
 post_time_limit = 12
@@ -46,7 +46,7 @@ max_per_hour = 0
 # If set to "skip" the posts will be skipped and the poster will instead continue on with new posts.
 # Accepted values: retry, skip
 overflow_posts = "retry"
-# If cross_delete is set to true, posts you delete from bluesky within one our of being crossposted will also be deleted from mastodon and twitter
+# If cross_delete is set to true, posts your delete from bluesky within one hour of being crossposted will also be deleted from mastodon and twitter
 cross_delete = True
 # Setting a buffer to avoid exceeding the rate limit. The limit is set in percent, and when the ratelimit-remaining reaches
 # x percent of ratelimit-limit the crossposter will pause until the ratelimit-reset.

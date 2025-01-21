@@ -1,6 +1,6 @@
 # Update Fall 2024
 
-New functionality has been added over the fall, including functionality to handle Blueskys new video functions. Another new function is cross-deletion, meaning if you delete a post within one hour of posting it on Bluesky, it will also be deleted on the other platforms. This function can be disabled in settings by setting cross_delete to False.
+New functionality has been added over the fall, including functionality to handle Bluesky's new video functions. Another new function is cross-deletion, meaning if you delete a post within one hour of posting it on Bluesky, it will also be deleted on the other platforms. This function can be disabled in settings by setting cross_delete to False.
 
 This will probably be the last update for a while, except for some bug fixes if needed. Before further updates the poster would probably need some major rewrites to make it be less of a mess.
 
@@ -9,8 +9,8 @@ This will probably be the last update for a while, except for some bug fixes if 
 Version 2 of the crossposter has now been released. The new version contains a bunch of new options, along with fixes and restructuring. To start using the new version I recommend making a new, separate installation and transferring your settings and database to the new version. 
 
 New functions include:
-- Reposting your own posts (only works on Mastodon unless you pay for a higher level of twitters API)
-- Quote posts of other people's posts, with their posts included as a link to Bluesky (can be toggled on/off in settings and automatically skips posts from users whos posts are not public).
+- Reposting your own posts (only works on Mastodon unless you pay for a higher level of Twitter's API).
+- Quote posts of other people's posts, with their posts included as a link to Bluesky (can be toggled on/off in settings and automatically skips posts from users whose posts are not public).
 - Username handling allows you to either skip posts where you mention another Bluesky user, or cleanup of username so that they are not interpreted as users after being crossposted.
 - Limiting posts per hour, either skipping posts that go over the posts per hour limit, or sending them at a later time.
 
@@ -24,7 +24,7 @@ When first run, or run without a database file, all posts within the timelimit s
 
 In the settings.py you can also disable posting to twitter or mastodon if you only want to post to one of them. Just change "True" to "False" for the service you want to disable. You can also disable logging if you have limited space where the program will run.
 
-The file settings.py now also allows (mis)using blueskys language function by designating a language that when set can be used to decide if a specific post should or should not be crossposted. More info can be found in the file.
+The file settings.py now also allows (mis)using Bluesky's language function by designating a language that when set can be used to decide if a specific post should or should not be crossposted. More info can be found in the file.
 
 ## Running with Docker
 The included Dockerfile and docker-compose file can be used to run the service in a docker container. Configuration options can be set in the docker-compose file, added to an .env file (see env.example) or injected as environment variables in some other way. An additional configuration option, RUN_INTERVAL, is provided to set the interval in seconds for which to check for new posts.
